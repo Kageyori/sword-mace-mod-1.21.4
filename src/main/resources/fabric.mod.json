@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "swordmacemod",
+	"version": "${version}",
+	"name": "Sword Mace Mod",
+	"description": "a Sword Mace Mod!",
+	"authors": [
+		"Kageyori!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/swordmacemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kageyori.swordmacemod.SwordMaceMod"
+		],
+		"fabric-datagen": [
+			"net.kageyori.swordmacemod.SwordMaceModDataGenerator"
+		],
+		"client": [
+			"net.kageyori.swordmacemod.SwordMaceModClient"
+		]
+	},
+	"mixins": [
+		"swordmacemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
